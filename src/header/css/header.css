@@ -2,6 +2,10 @@
     padding-top: 14px !important;
     padding-bottom: 14px !important;
 }
+.nav-bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #FFFFFF !important;
+}
 .img-nav-logo {
     width: 180px;
     height: 35px;
@@ -50,7 +54,33 @@
 .dropdown-toggle::after {
     display: none !important;
 }
+.nav-hover {
+    width: 100%;
+    height: 2px;
+}
 .nav-hover.active {
-    background-color: #000000; /*#edeef2;*/
-    width: 90%;
+    background-color: #edeef2;
+    visibility: visible;
+}
+.nav-hover.inactive {
+    background-color: #CCCCCC;
+    visibility: hidden;
+}
+#basicNavDropdown {
+    display: none;
+}
+#homeNav:hover ~ .nav-hover-inactive {
+    visibility: visible;
+}
+#lessonsNav:hover ~ .nav-hover.inactive {
+    visibility: visible;
+}
+#basicsNav:hover ~ .nav-hover.inactive {
+    visibility: visible;
+}
+#lifeNav:hover ~ .nav-hover.inactive {
+    visibility: visible;
+}
+#toolsNav:hover ~ .nav-hover.inactive {
+    visibility: visible;
 }

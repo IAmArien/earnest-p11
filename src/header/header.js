@@ -5,7 +5,7 @@ import './css/header.css'
 export default function Header() {
     return (
         <React.Fragment>
-            <Navbar expand='lg' className='justify-content-between bg-light nav-header-container'>
+            <Navbar expand='lg' className='justify-content-between nav-bg-light nav-header-container'>
                 <Container>
                     <Navbar.Brand href='./'>
                         <Image className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
@@ -14,21 +14,35 @@ export default function Header() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className='nav-menu-items'>
                             <Nav.Item>
-                                <Nav.Link className='auto-padder' href="#home" active={true}>Home</Nav.Link>
-                                <div className='nav-hover.active'></div>
+                                <Nav.Link id='homeNav' className='auto-padder' href="#home" active={true}>Home</Nav.Link>
+                                <div className='nav-hover active'></div>
                             </Nav.Item>
-                            <Nav.Link className='auto-padder' href="#lessons">Lessons</Nav.Link>
-                            <NavDropdown className='auto-padder' title="Basics" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#explainers">Explainers</NavDropdown.Item>
-                                <NavDropdown.Item href="#dictionary">Dictionary</NavDropdown.Item>
-                                <NavDropdown.Item href="#moneymyths">Money Myths</NavDropdown.Item>
-                            </NavDropdown>
-                            <NavDropdown className='auto-padder' title="Life" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#stories">Stories</NavDropdown.Item>
-                                <NavDropdown.Item href="#howtos">How To's</NavDropdown.Item>
-                                <NavDropdown.Item href="#digests">Digests</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link className='auto-padder' href="#tools">Tools</Nav.Link>
+                            <Nav.Item>
+                                <Nav.Link id='lessonsNav' className='auto-padder' href="#lessons">Lessons</Nav.Link>
+                                <div className='nav-hover inactive'></div>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link id='basicsNav' className='auto-padder' href="#basics">Basics</Nav.Link>
+                                <div className='nav-hover inactive'></div>
+                                <NavDropdown className='auto-padder' id="basicNavDropdown">
+                                    <NavDropdown.Item href="#explainers">Explainers</NavDropdown.Item>
+                                    <NavDropdown.Item href="#dictionary">Dictionary</NavDropdown.Item>
+                                    <NavDropdown.Item href="#moneymyths">Money Myths</NavDropdown.Item>
+                                </NavDropdown>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link id='lifeNav' className='auto-padder' href="#life">Life</Nav.Link>
+                                <div className='nav-hover inactive'></div>
+                                {/* <NavDropdown className='auto-padder' id="lifeNavDropdown">
+                                    <NavDropdown.Item href="#stories">Stories</NavDropdown.Item>
+                                    <NavDropdown.Item href="#howtos">How To's</NavDropdown.Item>
+                                    <NavDropdown.Item href="#digests">Digests</NavDropdown.Item>
+                                </NavDropdown> */}
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link id='toolsNav' className='auto-padder' href="#tools">Tools</Nav.Link>
+                                <div className='nav-hover inactive'></div>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                     <div style={{ height: '100%' }}>
