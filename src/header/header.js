@@ -24,11 +24,11 @@ export default function Header() {
                             <Nav.Item>
                                 <Nav.Link id='basicsNav' className='auto-padder' href="#basics">Basics</Nav.Link>
                                 <div className='nav-hover inactive'></div>
-                                <NavDropdown className='auto-padder' id="basicNavDropdown">
+                                {/* <NavDropdown className='auto-padder' id="basicNavDropdown">
                                     <NavDropdown.Item href="#explainers">Explainers</NavDropdown.Item>
                                     <NavDropdown.Item href="#dictionary">Dictionary</NavDropdown.Item>
                                     <NavDropdown.Item href="#moneymyths">Money Myths</NavDropdown.Item>
-                                </NavDropdown>
+                                </NavDropdown> */}
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link id='lifeNav' className='auto-padder' href="#life">Life</Nav.Link>

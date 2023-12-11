@@ -66,8 +66,9 @@
     background-color: #CCCCCC;
     visibility: hidden;
 }
-#basicNavDropdown {
-    display: none;
+.nav-item {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 #homeNav:hover ~ .nav-hover-inactive {
     visibility: visible;
