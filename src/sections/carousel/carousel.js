@@ -17,7 +17,7 @@ import CarouselImage6 from '../resources/CAROUSEL_6.jpg';
 export default function Carousel() {
     return (
         <React.Fragment>
-            <OwlCarousel items={1} className='owl-theme' loop nav={false} margin={0} autoPlay>
+            <OwlCarousel items={1} className='owl-theme carousel-margin' loop nav={false} margin={0} autoPlay>
                 <div className='item'>
                     <div className='div-carousel-filter-banner'>
                         <img className='img-carousel' src={CarouselImage1}/>

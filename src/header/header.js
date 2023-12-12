@@ -5,7 +5,7 @@ import './css/header.css'
 export default function Header() {
     return (
         <React.Fragment>
-            <Navbar expand='lg' className='justify-content-between nav-bg-light nav-header-container'>
+            <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
                 <Container>
                     <Navbar.Brand href='./'>
                         <Image className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
