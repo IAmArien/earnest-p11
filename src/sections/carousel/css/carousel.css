@@ -1,0 +1,100 @@
+.div-carousel-filter-banner {
+    filter: brightness(65%);
+}
+.img-carousel {
+    width: 100%;
+    height: 688px;
+    object-fit: cover;
+}
+.div-carousel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 35px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -28px;
+    z-index: 1000;
+    position: relative;
+}
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: transparent !important;
+    border: 2px solid #FFFFFF !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #FFFFFF !important;
+}
+.div-carousel-content-title {
+    background: #007ecc;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 150%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 4px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+.h2-carousel-content-sub-title {
+    width: 100%;
+    margin-top: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Hepta Slab';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+    font-size: 32px;
+}
+.p-carousel-content {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 21px;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+.div-carousel-content-button {
+    background: #007ecc;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    min-width: 110px;
+    justify-content: center;
+    padding: 9px 11px;
+    height: 38px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
