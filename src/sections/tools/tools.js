@@ -60,6 +60,7 @@ export default function Tools() {
                     </Col>
                     <Col lg={2}></Col>
                 </Row>
+                <div className='div-line-break-tools'></div>
             </Container>
         </React.Fragment>
     )

@@ -1,0 +1,21 @@
+.img-basics {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.col-basics {
+    padding: 0px !important;
+}
+.col-basics-left {
+    padding-right: 15px !important;
+}
+.col-basics-right {
+    padding-left: 15px !important;
+}
+.div-basics-content {
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000014;
+}
