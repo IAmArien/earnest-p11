@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 import '../tools/css/tools.css';
 import './css/basics.css';
@@ -9,6 +9,9 @@ import BASICS_2 from '../resources/BASICS_2.jpg';
 import BASICS_3 from '../resources/BASICS_3.jpg';
 
 export default function Basics() {
+    const onViewMoreClick =() => {
+        window.location.href = "https://earnest.ph/invest/topic/basics"
+    }
     return (
         <React.Fragment>
             <Container>
@@ -27,7 +30,7 @@ export default function Basics() {
                     <Col lg={8} md={12} sm={12}>
                         <Row className='row-tools'>
                             <Col lg={5} md={5} sm={12} className='div-tools-img'>
-                                <img className='img-tools' src={BASICS_1}/>
+                                <img alt={BASICS_1} className='img-tools' src={BASICS_1}/>
                             </Col>
                             <Col lg={7} md={7} sm={12}>
                                 <div className='div-tools-card-description'>
@@ -48,7 +51,7 @@ export default function Basics() {
                         <Row>
                             <Col lg={6} md={6} sm={12} className="col-basics col-basics-left">
                                 <div className="div-basics-content">
-                                    <img className='img-basics' src={BASICS_2}/>
+                                    <img alt={BASICS_2} className='img-basics' src={BASICS_2}/>
                                     <div className='div-tools-card-description'>
                                         <p className='p-small-tools-title'>EXPLAINERS</p>
                                         <h2 className='h2-tools-title'>Setting money goals for 2024? Know these 2 mindsets to stay motivated</h2>
@@ -60,7 +63,7 @@ export default function Basics() {
                             </Col>
                             <Col lg={6} md={6} sm={12} className="col-basics col-basics-right">
                                 <div className="div-basics-content">
-                                    <img className='img-basics' src={BASICS_3}/>
+                                    <img alt={BASICS_3} className='img-basics' src={BASICS_3}/>
                                     <div className='div-tools-card-description'>
                                         <p className='p-small-tools-title'>DICTIONARY</p>
                                         <h2 className='h2-tools-title'>Hedging</h2>
@@ -74,6 +77,10 @@ export default function Basics() {
                     </Col>
                     <Col lg={2}></Col>
                 </Row>
+                <Button variant="outline-secondary" size="lg" className="btn-basics-view-more" onClick={onViewMoreClick}>
+                    View More
+                </Button>
+                <div className='div-line-break-basics'></div>
             </Container>
         </React.Fragment>
     )
