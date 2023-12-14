@@ -12,11 +12,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Carousel />
-      <Tools />
-      <Basics />
-      <Life />
+      <div className='div-content-wrapper'>
+        <Header />
+        <Carousel />
+        <Tools />
+        <Basics />
+        <Life />
+      </div>
     </React.Fragment>
   );
 }

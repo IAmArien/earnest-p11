@@ -3,6 +3,7 @@ import { Button, Container, Col, Row } from "react-bootstrap";
 
 import '../tools/css/tools.css';
 import '../basics/css/basics.css';
+import './css/life.css';
 
 import LIFE_1 from '../resources/LIFE_1.jpg';
 import LIFE_2 from '../resources/LIFE_2.jpg';
@@ -76,7 +77,7 @@ export default function Life() {
                     </Col>
                     <Col lg={2}></Col>
                 </Row>
-                <Button variant="outline-secondary" size="lg" className="btn-basics-view-more" onClick={onViewMoreClick}>
+                <Button variant="outline-secondary" size="lg" className="btn-life-view-more" onClick={onViewMoreClick}>
                     View More
                 </Button>
             </Container>

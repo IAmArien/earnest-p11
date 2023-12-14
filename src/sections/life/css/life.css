@@ -1,0 +1,20 @@
+.btn-life-view-more {
+    border: 2px solid #007ecc !important;
+    border-radius: 8px;
+    background: #FFFFFF !important;
+    color: #007ecc!important;
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    text-decoration: unset !important;
+    display: block !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-top: 66px;
+    margin-left: auto;
+    margin-right: auto;
+}
