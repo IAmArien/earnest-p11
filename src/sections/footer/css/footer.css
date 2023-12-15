@@ -1,0 +1,55 @@
+.div-footer-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.div-subscribe-field {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #666;
+    margin-bottom: 10px;
+}
+.h2-subscribe-footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #11324a;
+    line-height: 140%;
+}
+.div-subscribe-input {
+    margin-top: 15px;
+}
+.input-subscribe-email {
+    border: 0;
+    border-bottom: 1px solid #292c33;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 30px 5px 10px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: #666;
+}
+.input-subscribe-email::placeholder {
+    color: #e0dede;
+}
+.faIconSubscribeFooter {
+    margin-left: -23px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #007ecc;
+    cursor: pointer;
+}
+.p-all-rights-reserved {
+    margin-top: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #666d80;
+}
