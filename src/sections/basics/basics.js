@@ -30,7 +30,7 @@ export default function Basics() {
                     <Col lg={8} md={12} sm={12}>
                         <Row className='row-tools'>
                             <Col lg={5} md={5} sm={12} className='div-tools-img'>
-                                <img alt={BASICS_1} className='img-tools' src={BASICS_1}/>
+                                <img alt={BASICS_1} className='img-basics-top' src={BASICS_1}/>
                             </Col>
                             <Col lg={7} md={7} sm={12}>
                                 <div className='div-tools-card-description'>

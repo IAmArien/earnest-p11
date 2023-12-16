@@ -1,3 +1,12 @@
+.img-basics-top {
+    min-height: 240px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .img-basics {
     width: 100%;
     height: auto;
@@ -47,4 +56,18 @@
     width: 40% !important;
     margin-left: auto;
     margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+    .col-basics-left {
+        padding-right: 0px !important;
+    }
+    .col-basics-right {
+        padding-left: 0px !important;
+        margin-top: 50px !important;
+    }
+    .img-basics-top {
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
 }

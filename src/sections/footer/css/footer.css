@@ -1,8 +1,8 @@
 .div-footer-wrapper {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 .div-subscribe-field {
+    padding-top: 50px;
     width: 100%;
     font-family: 'Open Sans';
     font-style: normal;
@@ -10,6 +10,26 @@
     font-size: 14px;
     line-height: 140%;
     color: #666;
+}
+@media only screen and (max-width: 768px) {
+    .div-subscribe-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-subscribe-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-footer-nav-logo {
+        margin: auto;
+    }
+    .li-footer-nav-item {
+        padding-top: 10px;
+    }
 }
 .h2-subscribe-footer {
     font-family: 'Open Sans';
@@ -20,10 +40,11 @@
     line-height: 140%;
 }
 .div-subscribe-input {
+    width: 100%;
     margin-top: 15px;
 }
 .input-subscribe-email {
-    border: 0;
+    border: 0px;
     border-bottom: 1px solid #292c33;
     height: 40px;
     width: 100%;
@@ -32,6 +53,12 @@
     font-size: 18px;
     font-family: 'Open Sans';
     color: #666;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.input-subscribe-email:focus {
+    outline: none;
+    border-bottom: 2px solid #007ecc;
 }
 .input-subscribe-email::placeholder {
     color: #e0dede;
@@ -54,6 +81,7 @@
     margin-bottom: 0px !important;
 }
 .div-footer-nav-menus {
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -80,9 +108,9 @@
 .div-footer-nav-logo {
     position: relative;
     display: flex;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: center;
     align-items: end;
-    float: right;
 }
 .div-footer-nav-menu {
     clear: both;
@@ -90,8 +118,7 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    float: right;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .ul-footer-nav-menu {
     padding: 0;

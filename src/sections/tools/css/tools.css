@@ -96,3 +96,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media only screen and (max-width: 768px) {
+    .img-tools {
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}

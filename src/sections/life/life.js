@@ -30,7 +30,7 @@ export default function Life() {
                     <Col lg={8} md={12} sm={12}>
                         <Row className='row-tools'>
                             <Col lg={5} md={5} sm={12} className='div-tools-img'>
-                                <img alt={LIFE_1} className='img-tools' src={LIFE_1}/>
+                                <img alt={LIFE_1} className='img-life' src={LIFE_1}/>
                             </Col>
                             <Col lg={7} md={7} sm={12}>
                                 <div className='div-tools-card-description'>
@@ -49,7 +49,7 @@ export default function Life() {
                     <Col lg={2}></Col>
                     <Col lg={8} md={12} sm={12}>
                         <Row>
-                            <Col lg={6} md={6} sm={12} className="col-basics col-basics-left">
+                            <Col lg={6} md={6} sm={12} className="col-life col-life-left">
                                 <div className="div-basics-content">
                                     <img alt={LIFE_2} className='img-basics' src={LIFE_1}/>
                                     <div className='div-tools-card-description'>
@@ -61,7 +61,7 @@ export default function Life() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={6} md={6} sm={12} className="col-basics col-basics-right">
+                            <Col lg={6} md={6} sm={12} className="col-life col-life-right">
                                 <div className="div-basics-content">
                                     <img alt={LIFE_2} className='img-basics' src={LIFE_2}/>
                                     <div className='div-tools-card-description'>
