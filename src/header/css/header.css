@@ -74,10 +74,11 @@
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
+
 #homeNav:hover ~ .nav-hover.active {
     background-color: #CCCCCC;
 }
-#lessonsNav:hover ~ .nav-hover.inactive {
+#lessonsNav:hover .nav-hover.inactive {
     width: 100% !important;
 }
 #basicsNav:hover ~ .nav-hover.inactive {
@@ -88,4 +89,89 @@
 }
 #toolsNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
+}
+
+#basicsNav:hover .div-basics-extra-menu {
+    height: 170px;
+}
+#lifeNav:hover .div-life-extra-menu {
+    height: 170px;
+}
+
+.nav-basics-items {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.div-basics-extra-menu {
+    height: 0px;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+    z-index: 999;
+    background: #FFFFFF !important;
+    overflow: hidden;
+    min-width: 250px;
+    box-shadow: 0 0 10px #00000014;
+    border-radius: 4px !important;
+    padding: 0px !important;
+    transition: .3s;
+}
+.nav-basics-item {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+.nav-basics-item:hover {
+    background: #007ecc !important;
+    color: #FFFFFF !important;
+}
+
+.nav-life-items {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.div-life-extra-menu {
+    height: 0px;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+    z-index: 999;
+    background: #FFFFFF !important;
+    overflow: hidden;
+    min-width: 250px;
+    box-shadow: 0 0 10px #00000014;
+    border-radius: 4px !important;
+    padding: 0px !important;
+    transition: .3s;
+}
+.nav-life-item {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+.nav-life-item:hover {
+    background: #007ecc !important;
+    color: #FFFFFF !important;
 }

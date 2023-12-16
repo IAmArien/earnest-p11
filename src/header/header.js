@@ -1,6 +1,7 @@
-import React from 'react'
-import { Container, Image, Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
-import './css/header.css'
+import React from 'react';
+import { Container, Image, Navbar, Nav, Button } from 'react-bootstrap';
+
+import './css/header.css';
 
 export default function Header() {
     return (
@@ -14,33 +15,41 @@ export default function Header() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className='nav-menu-items'>
                             <Nav.Item>
-                                <Nav.Link id='homeNav' className='auto-padder' href="#home" active={true}>Home</Nav.Link>
+                                <Nav.Link id='homeNav' className='auto-padder' href="./" active={true}>Home</Nav.Link>
                                 <div className='nav-hover active'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id='lessonsNav' className='auto-padder' href="#lessons">Lessons</Nav.Link>
+                                <Nav.Link id='lessonsNav' className='auto-padder' href="https://earnest.ph/invest/learn">Lessons</Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id='basicsNav' className='auto-padder' href="#basics">Basics</Nav.Link>
+                                <Nav.Link id='basicsNav' className='auto-padder' href='https://earnest.ph/invest/topic/basics'>
+                                    <Nav.Item>Basics</Nav.Item>
+                                    <div className='div-basics-extra-menu'>
+                                        <Nav.Item className='nav-basics-items' id='nav-items'>
+                                            <Nav.Link className='nav-basics-item' href='https://earnest.ph/invest/topic/basics?section=explainers'>Explainers</Nav.Link>
+                                            <Nav.Link className='nav-basics-item' href='https://earnest.ph/invest/topic/basics?section=dictionary'>Dictionary</Nav.Link>
+                                            <Nav.Link className='nav-basics-item' href='https://earnest.ph/invest/topic/basics?section=money-myths'>Money Myths</Nav.Link>
+                                        </Nav.Item>
+                                    </div>
+                                </Nav.Link>
                                 <div className='nav-hover inactive'></div>
-                                {/* <NavDropdown className='auto-padder' id="basicNavDropdown">
-                                    <NavDropdown.Item href="#explainers">Explainers</NavDropdown.Item>
-                                    <NavDropdown.Item href="#dictionary">Dictionary</NavDropdown.Item>
-                                    <NavDropdown.Item href="#moneymyths">Money Myths</NavDropdown.Item>
-                                </NavDropdown> */}
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id='lifeNav' className='auto-padder' href="#life">Life</Nav.Link>
+                                <Nav.Link id='lifeNav' className='auto-padder' href="https://earnest.ph/invest/topic/life">
+                                    <Nav.Item>Life</Nav.Item>
+                                    <div className='div-life-extra-menu'>
+                                        <Nav.Item className='nav-life-items' id='nav-items'>
+                                            <Nav.Link className='nav-life-item' href='https://earnest.ph/invest/topic/life?section=stories'>Stories</Nav.Link>
+                                            <Nav.Link className='nav-life-item' href='https://earnest.ph/invest/topic/life?section=how-tos'>How To's</Nav.Link>
+                                            <Nav.Link className='nav-life-item' href='https://earnest.ph/invest/topic/life?section=digests'>Digests</Nav.Link>
+                                        </Nav.Item>
+                                    </div>
+                                </Nav.Link>
                                 <div className='nav-hover inactive'></div>
-                                {/* <NavDropdown className='auto-padder' id="lifeNavDropdown">
-                                    <NavDropdown.Item href="#stories">Stories</NavDropdown.Item>
-                                    <NavDropdown.Item href="#howtos">How To's</NavDropdown.Item>
-                                    <NavDropdown.Item href="#digests">Digests</NavDropdown.Item>
-                                </NavDropdown> */}
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link id='toolsNav' className='auto-padder' href="#tools">Tools</Nav.Link>
+                                <Nav.Link id='toolsNav' className='auto-padder' href="https://earnest.ph/invest/topic/tools">Tools</Nav.Link>
                                 <div className='nav-hover inactive'></div>
                             </Nav.Item>
                         </Nav>
