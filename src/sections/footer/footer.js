@@ -36,11 +36,26 @@ export default function Footer() {
                                 </div>
                                 <div className="div-footer-nav-menu">
                                     <ul className="ul-footer-nav-menu">
-                                        <li className="li-footer-nav-item">About</li>
-                                        <li className="li-footer-nav-item">FAQs</li>
-                                        <li className="li-footer-nav-item">Terms and Conditions</li>
-                                        <li className="li-footer-nav-item">Disclaimer</li>
-                                        <li className="li-footer-nav-item">Privacy Policy</li>
+                                        <li className="li-footer-nav-item">
+                                            <a className="a-footer-nav-item" href="#">About</a>
+                                            <div className='footer-hover inactive'></div>
+                                        </li>
+                                        <li className="li-footer-nav-item">
+                                            <a className="a-footer-nav-item" href="#">FAQs</a>
+                                            <div className='footer-hover inactive'></div>
+                                        </li>
+                                        <li className="li-footer-nav-item">
+                                            <a className="a-footer-nav-item" href="#">Terms and Conditions</a>
+                                            <div className='footer-hover inactive'></div>
+                                        </li>
+                                        <li className="li-footer-nav-item">
+                                            <a className="a-footer-nav-item" href="#">Disclaimer</a>
+                                            <div className='footer-hover inactive'></div>
+                                        </li>
+                                        <li className="li-footer-nav-item">
+                                            <a className="a-footer-nav-item" href="#">Privacy Policy</a>
+                                            <div className='footer-hover inactive'></div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
