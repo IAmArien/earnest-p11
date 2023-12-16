@@ -144,16 +144,21 @@
 .footer-hover {
     width: 100%;
     height: 2px;
-    margin-top: 10px;
 }
 .footer-hover.active {
+    margin: auto;
+    margin-top: 10px;
     background-color: #edeef2 !important;
-    visibility: visible !important;
+    width: 100% !important;
+    transition: .7s;
 }
 .footer-hover.inactive {
+    margin: auto;
+    margin-top: 10px;
     background-color: #CCCCCC;
-    visibility: hidden;
+    width: 0% !important;
+    transition: .7s;
 }
 .a-footer-nav-item, a:hover ~ .footer-hover.inactive {
-    visibility: visible;
+    width: 100% !important;
 }

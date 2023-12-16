@@ -59,29 +59,33 @@
     height: 2px;
 }
 .nav-hover.active {
+    margin: auto;
     background-color: #edeef2;
-    visibility: visible;
+    width: 100%;
+    transition: .7s;
 }
 .nav-hover.inactive {
+    margin: auto;
     background-color: #CCCCCC;
-    visibility: hidden;
+    width: 0% !important;
+    transition: .7s;
 }
 .nav-item {
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
-#homeNav:hover ~ .nav-hover-inactive {
-    visibility: visible;
+#homeNav:hover ~ .nav-hover.active {
+    background-color: #CCCCCC;
 }
 #lessonsNav:hover ~ .nav-hover.inactive {
-    visibility: visible;
+    width: 100% !important;
 }
 #basicsNav:hover ~ .nav-hover.inactive {
-    visibility: visible;
+    width: 100% !important;
 }
 #lifeNav:hover ~ .nav-hover.inactive {
-    visibility: visible;
+    width: 100% !important;
 }
 #toolsNav:hover ~ .nav-hover.inactive {
-    visibility: visible;
+    width: 100% !important;
 }

@@ -18,7 +18,7 @@ export default function Basics() {
                 <Row className='row-tools-title'>
                     <Col lg={12} md={12} sm={12}>
                         <div className='div-tools-title'>
-                            <a className='a-tools-title' href='https://earnest.ph/invest/topic/tools'>Basics</a>
+                            <a className='a-tools-title' href='https://earnest.ph/invest/topic/basics'>Basics</a>
                         </div>
                         <p className='p-tools-description'>
                             Find essential knowledge for your investing journey
