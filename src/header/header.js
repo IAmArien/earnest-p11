@@ -5,6 +5,7 @@ import './css/header.css';
 
 import HEADER_SEARCH from '../sections/resources/HEADER_SEARCH.svg';
 import HEADER_CLOSE from '../sections/resources/HEADER_CLOSE.svg';
+import HEADER_TOGGLER from '../sections/resources/HEADER_TOGGLER.webp';
 
 export default function Header() {
 
@@ -57,12 +58,12 @@ export default function Header() {
     return (
         <React.Fragment>
             <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
-                <Container>
-                    <Navbar.Brand href='./'>
+                <Container className='header-container'>
+                    <Navbar.Brand href='#'>
+                        <Image className='img-nav-toggler' src={HEADER_TOGGLER}/>
                         <Image className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basicNavbarNav">
                         <Nav className='nav-menu-items'>
                             <Nav.Item>
                                 <Nav.Link id='homeNav' className='auto-padder' href="./" active={true}>Home</Nav.Link>
@@ -109,7 +110,7 @@ export default function Header() {
                             <Button className='btn-login-signup' variant='primary' size='md'>Login/Sign up</Button>
                         </Nav.Link>
                         <Nav.Item id='navItemSearchBar' className='pull-left navInputSearchBar-default'>
-                            <input id='navInputSearchBar' className="input-header-search" type="email" placeholder="Search Earnest..." />
+                            <input id='navInputSearchBar' className="input-header-search navInputSearchBar-no-width" type="email" placeholder="Search Earnest..." />
                         </Nav.Item>
                         <Nav.Item className='pull-right nav-item-search-icon'>
                             <Image id='imgNavSearch' onClick={() => onNavSearchClick()} className='img-nav-search' src={HEADER_SEARCH} />

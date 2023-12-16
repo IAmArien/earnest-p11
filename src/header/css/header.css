@@ -6,6 +6,10 @@
     --bs-bg-opacity: 1;
     background-color: #FFFFFF !important;
 }
+.img-nav-toggler {
+    display: none;
+    margin-top: 5px;
+}
 .img-nav-logo {
     width: 180px;
     height: 35px;
@@ -216,6 +220,8 @@
 
 .navInputSearchBar-default {
     display: block;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .navInputSearchBar-no-width {
@@ -225,4 +231,44 @@
 .navInputSearchBar-width {
     width: 150px !important;
     transition: .7s;
+}
+
+@media only screen and (max-width: 1024px) {
+    #basicNavbarNav {
+        display: none !important;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .img-nav-logo {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .img-nav-toggler {
+        display: block;
+    }
+    .header-container {
+        width: 100% !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navItemLoginSignup {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header-container {
+        width: 100% !important;
+        padding-left: 2.8rem !important;
+        padding-right: 2.8em !important;
+    }
 }
