@@ -72,7 +72,7 @@ export default function Header() {
     return (
         <React.Fragment>
             <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
-                <div className='nav-slider-drawer' id='navSliderDrawer'>
+                <div className='nav-slider-drawer slide-close' id='navSliderDrawer'>
                     <Image className='img-nav-slider-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
                     <FontAwesomeIcon className='ic-nav-slider-close' icon={faClose} onClick={() => onDrawerMenuClick(false)}/>
                     <Nav className='nav-slider-menu'>
