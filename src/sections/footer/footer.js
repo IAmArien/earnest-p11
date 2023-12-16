@@ -23,7 +23,27 @@ export default function Footer() {
                             </div>
                         </Col>
                         <Col lg={8} md={8} sm={12}>
-
+                            <div className="div-footer-nav-menus">
+                                <div className="div-footer-nav-logo">
+                                    <div className="div-earnest-logo-footer">
+                                        <img className="img-earnest-footer-logo" src="https://earnest.ph/invest/data/photos/earnest-logo.svg" />
+                                        <img src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4TD4AAAAvGwAKEB8gJCBTqm4YsWCK9+aZkIBQ/R9gjV8CAUKCDP8jlgKw7DOH2UgydmhM/235lDii/xOAEt8xaZ/VAA==" />
+                                        <img className="img-metrobank-footer-logo" src="https://earnest.ph/invest/data/photos/metrobank-footer.svg" />
+                                    </div>
+                                    <div>
+                                        <img src="https://earnest.ph/invest/data/uploads/2020/08/facebook-icon.png" />
+                                    </div>
+                                </div>
+                                <div className="div-footer-nav-menu">
+                                    <ul className="ul-footer-nav-menu">
+                                        <li className="li-footer-nav-item">About</li>
+                                        <li className="li-footer-nav-item">FAQs</li>
+                                        <li className="li-footer-nav-item">Terms and Conditions</li>
+                                        <li className="li-footer-nav-item">Disclaimer</li>
+                                        <li className="li-footer-nav-item">Privacy Policy</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </div>
