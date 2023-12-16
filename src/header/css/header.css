@@ -33,9 +33,20 @@
     top: 8px;
     cursor: pointer;
 }
-.img-nav-search:hover {
+.img-nav-search-close {
+    margin: auto;
+    margin-top: -5px !important;
+    display: none;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+/* .img-nav-search:hover {
     opacity: 0.5;
 }
+.img-nav-search-close:hover {
+    opacity: 0.5;
+} */
 .nav-menu-items {
     margin-left: auto;
     margin-right: 50px;
@@ -174,4 +185,44 @@
 .nav-life-item:hover {
     background: #007ecc !important;
     color: #FFFFFF !important;
+}
+
+.input-header-search {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 1px 5px;
+    color: #6b6b6a;
+    font-size: 16px;
+    height: 32px;
+    width: 0px;
+    font-family: 'Open Sans';
+    margin-top: 5px;
+}
+.input-header-search::placeholder {
+    color: #e0dede;
+}
+.input-header-search:focus {
+    outline: none;
+    border-bottom: 2px solid #007ecc;
+}
+
+.navItemLoginSignup-visible {
+    display: block !important;
+}
+
+.navItemLoginSignup-hidden {
+    display: none !important;
+}
+
+.navInputSearchBar-default {
+    display: block;
+}
+
+.navInputSearchBar-no-width {
+    width: 0px !important;
+}
+
+.navInputSearchBar-width {
+    width: 150px !important;
+    transition: .7s;
 }
