@@ -15,9 +15,12 @@ import CarouselImage5 from '../resources/CAROUSEL_5.jpg';
 import CarouselImage6 from '../resources/CAROUSEL_6.jpg';
 
 export default function Carousel() {
+    const onContentButtonClick =(link) => {
+        window.location.href = link;
+    }
     return (
         <React.Fragment>
-            <OwlCarousel items={1} className='owl-theme carousel-margin' loop nav={false} margin={0} autoPlay>
+            <OwlCarousel items={1} className='owl-theme carousel-margin' loop nav={false} margin={0} autoplay>
                 <div className='item'>
                     <div className='div-carousel-filter-banner'>
                         <img className='img-carousel' src={CarouselImage1}/>
@@ -31,7 +34,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     Our improved lessons make it easier for you to get the knowledge you need.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/learn')}>
                                     &nbsp;Start Learning&nbsp;
                                 </div>
                             </Col>
@@ -56,7 +59,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     Waiting before spending has benefits, but these aren't always present.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/basics/you-should-wait-until-after-the-holidays-to-shop')}>
                                     &nbsp;Read More&nbsp;
                                 </div>
                             </Col>
@@ -81,7 +84,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     Here’s how to apply this strategy for added flexibility to your time deposits.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/life/how-to-maximize-your-time-deposits-through-laddering')}>
                                     &nbsp;Read More&nbsp;
                                 </div>
                             </Col>
@@ -106,7 +109,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     It can help to have a target number when working towards a money goal.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/basics/how-much-money-do-you-need-for-financial-independence')}>
                                     &nbsp;Read More&nbsp;
                                 </div>
                             </Col>
@@ -131,7 +134,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     These may help increase your chances of having a good experience with these investments.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/life/top-tips-for-investing-in-time-deposits')}>
                                     &nbsp;Read More&nbsp;
                                 </div>
                             </Col>
@@ -156,7 +159,7 @@ export default function Carousel() {
                                 <p className='p-carousel-content'>
                                     These investment products require you to keep your money in for a specified duration.
                                 </p>
-                                <div className='div-carousel-content-button'>
+                                <div className='div-carousel-content-button' onClick={() => onContentButtonClick('https://earnest.ph/invest/basics/what-are-time-deposits')}>
                                     &nbsp;Read More&nbsp;
                                 </div>
                             </Col>
