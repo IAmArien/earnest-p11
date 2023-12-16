@@ -1,0 +1,105 @@
+.row-tools-title {
+    margin-top: 125px !important;
+}
+.div-tools-title {
+    display: flex;
+    justify-content: center;
+}
+.a-tools-title {
+    font-family: 'Hepta Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #007ecc;
+    text-decoration: none;
+}
+.p-tools-description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin: 24px auto 70px auto;
+    width: 85%;
+    max-width: 620px;
+}
+.row-tools {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00000014;
+    padding: 0px !important;
+}
+.div-tools-img {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.img-tools {
+    min-height: 240px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.div-tools-card-description {
+    padding-top: 30px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    max-width: 350px;
+}
+.p-small-tools-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 150%;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #292c33;
+}
+.h2-tools-title {
+    text-align: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family: 'Hepta Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    color: #11324a;
+}
+.p-tools-card-description {
+    text-align: left;
+    color: #292c33;
+    line-height: 150%;
+    height: 72px;
+    margin-bottom: 0;
+    overflow: hidden;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+.div-line-break-tools {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #999999;
+    height: 2px;
+    width: 40% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+    .img-tools {
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}

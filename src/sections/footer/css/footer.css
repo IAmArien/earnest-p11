@@ -1,0 +1,164 @@
+.div-footer-wrapper {
+    padding-bottom: 50px;
+}
+.div-subscribe-field {
+    padding-top: 50px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #666;
+}
+@media only screen and (max-width: 768px) {
+    .div-subscribe-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-subscribe-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-footer-nav-logo {
+        margin: auto;
+    }
+    .li-footer-nav-item {
+        padding-top: 10px;
+    }
+}
+.h2-subscribe-footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #11324a;
+    line-height: 140%;
+}
+.div-subscribe-input {
+    width: 100%;
+    margin-top: 15px;
+}
+.input-subscribe-email {
+    border: 0px;
+    border-bottom: 1px solid #292c33;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 30px 5px 10px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: #666;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.input-subscribe-email:focus {
+    outline: none;
+    border-bottom: 2px solid #007ecc;
+}
+.input-subscribe-email::placeholder {
+    color: #e0dede;
+}
+.faIconSubscribeFooter {
+    margin-left: -23px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #007ecc;
+    cursor: pointer;
+}
+.p-all-rights-reserved {
+    margin-top: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #666d80;
+    margin-bottom: 0px !important;
+}
+.div-footer-nav-menus {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+.div-earnest-logo-footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
+}
+.img-earnest-footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.img-metrobank-footer-logo {
+    width: 100px;
+}
+.div-footer-nav-logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.div-footer-nav-menu {
+    clear: both;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 25px;
+}
+.ul-footer-nav-menu {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    list-style-type: none;
+    overflow: hidden;
+}
+.li-footer-nav-item {
+    float: left;
+}
+.a-footer-nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    color: #000000;
+    text-decoration: unset;
+}
+.footer-hover {
+    width: 100%;
+    height: 2px;
+}
+.footer-hover.active {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #edeef2 !important;
+    width: 100% !important;
+    transition: .7s;
+}
+.footer-hover.inactive {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #CCCCCC;
+    width: 0% !important;
+    transition: .7s;
+}
+.a-footer-nav-item, a:hover ~ .footer-hover.inactive {
+    width: 100% !important;
+}

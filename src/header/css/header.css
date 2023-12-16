@@ -1,0 +1,177 @@
+.nav-header-container {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
+.nav-bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #FFFFFF !important;
+}
+.img-nav-logo {
+    width: 180px;
+    height: 35px;
+    object-fit: contain;
+}
+.btn-login-signup {
+    background: #007ecc !important;
+    font-family: 'Open Sans' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    font-style: normal;
+    line-height: 140% !important;
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+    border-radius: 8px !important;
+}
+.nav-item-search-icon {
+    margin-left: 40px;
+    position: relative;
+}
+.img-nav-search {
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+.img-nav-search:hover {
+    opacity: 0.5;
+}
+.nav-menu-items {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.nav-link {
+    font-family: 'Open Sans' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    color: #292c33 !important;
+}
+.auto-padder {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+.nav-hover {
+    width: 100%;
+    height: 2px;
+}
+.nav-hover.active {
+    margin: auto;
+    background-color: #edeef2;
+    width: 100%;
+    transition: .7s;
+}
+.nav-hover.inactive {
+    margin: auto;
+    background-color: #CCCCCC;
+    width: 0% !important;
+    transition: .7s;
+}
+.nav-item {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+#homeNav:hover ~ .nav-hover.active {
+    background-color: #CCCCCC;
+}
+#lessonsNav:hover .nav-hover.inactive {
+    width: 100% !important;
+}
+#basicsNav:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#lifeNav:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+#toolsNav:hover ~ .nav-hover.inactive {
+    width: 100% !important;
+}
+
+#basicsNav:hover .div-basics-extra-menu {
+    height: 170px;
+}
+#lifeNav:hover .div-life-extra-menu {
+    height: 170px;
+}
+
+.nav-basics-items {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.div-basics-extra-menu {
+    height: 0px;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+    z-index: 999;
+    background: #FFFFFF !important;
+    overflow: hidden;
+    min-width: 250px;
+    box-shadow: 0 0 10px #00000014;
+    border-radius: 4px !important;
+    padding: 0px !important;
+    transition: .3s;
+}
+.nav-basics-item {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+.nav-basics-item:hover {
+    background: #007ecc !important;
+    color: #FFFFFF !important;
+}
+
+.nav-life-items {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.div-life-extra-menu {
+    height: 0px;
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+    z-index: 999;
+    background: #FFFFFF !important;
+    overflow: hidden;
+    min-width: 250px;
+    box-shadow: 0 0 10px #00000014;
+    border-radius: 4px !important;
+    padding: 0px !important;
+    transition: .3s;
+}
+.nav-life-item {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+.nav-life-item:hover {
+    background: #007ecc !important;
+    color: #FFFFFF !important;
+}
