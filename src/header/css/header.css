@@ -6,6 +6,10 @@
     --bs-bg-opacity: 1;
     background-color: #FFFFFF !important;
 }
+.img-nav-toggler {
+    display: none;
+    margin-top: 5px;
+}
 .img-nav-logo {
     width: 180px;
     height: 35px;
@@ -33,9 +37,20 @@
     top: 8px;
     cursor: pointer;
 }
-.img-nav-search:hover {
+.img-nav-search-close {
+    margin: auto;
+    margin-top: -5px !important;
+    display: none;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+/* .img-nav-search:hover {
     opacity: 0.5;
 }
+.img-nav-search-close:hover {
+    opacity: 0.5;
+} */
 .nav-menu-items {
     margin-left: auto;
     margin-right: 50px;
@@ -78,7 +93,7 @@
 #homeNav:hover ~ .nav-hover.active {
     background-color: #CCCCCC;
 }
-#lessonsNav:hover .nav-hover.inactive {
+#lessonsNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
 #basicsNav:hover ~ .nav-hover.inactive {
@@ -174,4 +189,167 @@
 .nav-life-item:hover {
     background: #007ecc !important;
     color: #FFFFFF !important;
+}
+
+.input-header-search {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 1px 5px;
+    color: #6b6b6a;
+    font-size: 16px;
+    height: 32px;
+    width: 0px;
+    font-family: 'Open Sans';
+    margin-top: 5px;
+}
+.input-header-search::placeholder {
+    color: #e0dede;
+}
+.input-header-search:focus {
+    outline: none;
+    border-bottom: 2px solid #007ecc;
+}
+
+.navItemLoginSignup-visible {
+    display: block !important;
+}
+
+.navItemLoginSignup-hidden {
+    display: none !important;
+}
+
+.navInputSearchBar-default {
+    display: block;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.navInputSearchBar-no-width {
+    width: 0px !important;
+}
+
+.navInputSearchBar-width {
+    width: 150px !important;
+    transition: .7s;
+}
+
+@media only screen and (max-width: 1024px) {
+    #basicNavbarNav {
+        display: none !important;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .img-nav-logo {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .img-nav-toggler {
+        display: block;
+    }
+    .header-container {
+        width: 100% !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navItemLoginSignup {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header-container {
+        width: 100% !important;
+        padding-left: 2.8rem !important;
+        padding-right: 2.8em !important;
+    }
+}
+
+.img-nav-slider-logo {
+    width: 180px;
+    height: 35px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.ic-nav-slider-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 25px;
+    z-index: 0;
+    color: #818181;
+    cursor: pointer;
+}
+
+.nav-slider-drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background: #F6F6F6 !important;
+    z-index: 999;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.slide-open {
+    width: 300px !important;
+    box-shadow: 0 0 10px 5px #CCCCCC !important;
+    transition: .4s;
+}
+
+.slide-close {
+    width: 0px !important;
+    box-shadow: 0 0 0px 0px #CCCCCC !important;
+    transition: .4s;
+}
+
+.nav-slider-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.nav-slider-item {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.nav-slider-menu-item {
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    line-height: 140% !important;
+    text-align: left !important;
+    color: #292c33 !important;
+    display: block;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #e6e4e4 !important;
+}
+
+.nav-slider-menu-item.active {
+    background: #007ecc !important;
+    color: #F6F6F6 !important;
+}
+.nav-slider-menu-item.inactive {
+    background: #F6F6F6 !important;
+    color: #666d80 !important;
+}
+.nav-slider-menu-item.sub-menu {
+    padding-left: 50px !important;
 }
