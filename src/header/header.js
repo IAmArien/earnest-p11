@@ -30,15 +30,26 @@ export default function Header() {
         hideSearchIcon()
 
         const navItemLoginSignup = document.getElementById('navItemLoginSignup');
-        navItemLoginSignup.classList.remove('navItemLoginSignup-visible')
-        navItemLoginSignup.classList.add('navItemLoginSignup-hidden')
+        navItemLoginSignup.classList.remove('navItemLoginSignup-visible');
+        navItemLoginSignup.classList.add('navItemLoginSignup-hidden');
 
         const navItemSearchBar = document.getElementById('navItemSearchBar');
-        navItemSearchBar.classList.add('navItemSearchBar-default')
+        navItemSearchBar.classList.remove('navItemSearchBar-default');
+        navItemSearchBar.classList.add('navInputSearchBar-visible');
 
-        const navInputSearchBar = document.getElementById('navInputSearchBar');
-        navInputSearchBar.classList.remove('navInputSearchBar-no-width')
-        navInputSearchBar.classList.add('navInputSearchBar-width')
+        setTimeout(() => {
+            const navInputSearchBar = document.getElementById('navInputSearchBar');
+            navInputSearchBar.classList.remove('navInputSearchBar-no-width')
+            navInputSearchBar.classList.add('navInputSearchBar-width')
+        }, 100);
+
+        if (window.innerWidth <= 767) {
+            const imgNavLogo = document.getElementById('imgNavLogo');
+            imgNavLogo.style.display = 'none';
+        } else {
+            const imgNavLogo = document.getElementById('imgNavLogo');
+            imgNavLogo.style.display = 'block';
+        }
     }
 
     const onNavSearchCloseClick =() => {
@@ -50,11 +61,15 @@ export default function Header() {
         navItemLoginSignup.classList.add('navItemLoginSignup-visible')
 
         const navItemSearchBar = document.getElementById('navItemSearchBar');
-        navItemSearchBar.classList.remove('navItemSearchBar-default')
+        navItemSearchBar.classList.remove('navInputSearchBar-visible');
+        navItemSearchBar.classList.add('navItemSearchBar-visible')
 
         const navInputSearchBar = document.getElementById('navInputSearchBar');
         navInputSearchBar.classList.remove('navInputSearchBar-width')
         navInputSearchBar.classList.add('navInputSearchBar-no-width')
+
+        const imgNavLogo = document.getElementById('imgNavLogo');
+        imgNavLogo.style.display = 'block';
     }
 
     const onDrawerMenuClick =(isOpen) => {
@@ -72,7 +87,7 @@ export default function Header() {
     return (
         <React.Fragment>
             <Navbar expand='lg' fixed='top' className='justify-content-between nav-bg-light nav-header-container'>
-                <div className='nav-slider-drawer' id='navSliderDrawer'>
+                <div className='nav-slider-drawer slide-close' id='navSliderDrawer'>
                     <Image className='img-nav-slider-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
                     <FontAwesomeIcon className='ic-nav-slider-close' icon={faClose} onClick={() => onDrawerMenuClick(false)}/>
                     <Nav className='nav-slider-menu'>
@@ -117,7 +132,7 @@ export default function Header() {
                 <Container className='header-container'>
                     <Navbar.Brand href='#'>
                         <Image className='img-nav-toggler' src={HEADER_TOGGLER} onClick={() => onDrawerMenuClick(true)}/>
-                        <Image className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
+                        <Image id='imgNavLogo' className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
                     </Navbar.Brand>
                     <Navbar.Collapse id="basicNavbarNav">
                         <Nav className='nav-menu-items'>
@@ -163,7 +178,7 @@ export default function Header() {
                     </Navbar.Collapse>
                     <div style={{ height: '100%' }}>
                         <Nav.Link id='navItemLoginSignup' className='pull-left navItemLoginSignup-visible ' href="https://technet.azure-api.net/public/v1/authentication/login?client_id=5fcfb64b-a29d-4845-98f0-ed75200b9f2c&amp;redirect_uri=https://earnest.ph/invest/callback&amp;response_type=CODE&amp;scope=offline_access">
-                            <Button className='btn-login-signup' variant='primary' size='md'>Login/Sign up</Button>
+                            <Button id='btnLoginSignUp' className='btn-login-signup' variant='primary' size='md'>Login/Sign up</Button>
                         </Nav.Link>
                         <Nav.Item id='navItemSearchBar' className='pull-left navInputSearchBar-default'>
                             <input id='navInputSearchBar' className="input-header-search navInputSearchBar-no-width" type="email" placeholder="Search Earnest..." />

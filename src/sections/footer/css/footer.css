@@ -111,6 +111,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: end;
+    z-index: -1;
 }
 .div-footer-nav-menu {
     clear: both;
@@ -119,6 +120,7 @@
     justify-content: end;
     align-items: end;
     margin-top: 25px;
+    z-index: -1;
 }
 .ul-footer-nav-menu {
     padding: 0;

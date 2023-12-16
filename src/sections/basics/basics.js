@@ -14,7 +14,7 @@ export default function Basics() {
     }
     return (
         <React.Fragment>
-            <Container>
+            <Container className="section-auto-padder">
                 <Row className='row-tools-title'>
                     <Col lg={12} md={12} sm={12}>
                         <div className='div-tools-title'>
