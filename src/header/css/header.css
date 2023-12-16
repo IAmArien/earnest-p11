@@ -219,7 +219,13 @@
 }
 
 .navInputSearchBar-default {
-    display: block;
+    display: none !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.navInputSearchBar-visible {
+    display: block !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -229,8 +235,8 @@
 }
 
 .navInputSearchBar-width {
-    width: 150px !important;
-    transition: .7s;
+    width: 170px !important;
+    transition: .4s;
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 10000px) {
@@ -277,6 +283,24 @@
 @media only screen and (max-width: 900px) {
     #navItemLoginSignup {
         display: none !important;
+    }
+    #imgNavSearch {
+        margin-top: -15px !important;
+    }
+    #imgNavSearchClose {
+        margin-top: 0px !important;
+    }
+    .img-nav-toggler {
+        margin-top: 10px !important;
+    }
+    .img-nav-logo {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
 
