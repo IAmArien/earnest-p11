@@ -18,3 +18,10 @@
   background-position: bottom;
   padding-bottom: 140px;
 }
+
+@media only screen and (max-width: 576px) {
+  .section-auto-padder {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}

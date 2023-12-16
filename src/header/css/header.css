@@ -298,7 +298,7 @@
     height: 100%;
     width: 0px;
     background: #F6F6F6 !important;
-    z-index: 999;
+    z-index: 9999;
     overflow-x: hidden;
     padding-top: 20px;
 }

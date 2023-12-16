@@ -19,6 +19,12 @@
     align-items: center;
     padding-left: 35px;
 }
+@media only screen and (max-width: 767px) {
+    .div-carousel-content {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+}
 .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: -28px;
     z-index: 1000;

@@ -9,7 +9,7 @@ import TOOLS_2 from '../resources/TOOLS_2.jpg';
 export default function Tools() {
     return (
         <React.Fragment>
-            <Container>
+            <Container className='section-auto-padder'>
                 <Row className='row-tools-title'>
                     <Col lg={12} md={12} sm={12}>
                         <div className='div-tools-title'>
