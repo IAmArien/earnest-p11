@@ -78,7 +78,7 @@
 #homeNav:hover ~ .nav-hover.active {
     background-color: #CCCCCC;
 }
-#lessonsNav:hover .nav-hover.inactive {
+#lessonsNav:hover ~ .nav-hover.inactive {
     width: 100% !important;
 }
 #basicsNav:hover ~ .nav-hover.inactive {
