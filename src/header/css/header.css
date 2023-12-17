@@ -396,3 +396,6 @@
 .nav-slider-menu-item.sub-menu {
     padding-left: 50px !important;
 }
+.put-behind-slider {
+    z-index: -1 !important;
+}

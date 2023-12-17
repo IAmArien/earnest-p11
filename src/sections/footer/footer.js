@@ -26,34 +26,34 @@ export default function Footer() {
                             <div className="div-footer-nav-menus">
                                 <div className="div-footer-nav-logo">
                                     <div className="div-earnest-logo-footer">
-                                        <img className="img-earnest-footer-logo" src="https://earnest.ph/invest/data/photos/earnest-logo.svg" />
-                                        <img src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4TD4AAAAvGwAKEB8gJCBTqm4YsWCK9+aZkIBQ/R9gjV8CAUKCDP8jlgKw7DOH2UgydmhM/235lDii/xOAEt8xaZ/VAA==" />
-                                        <img className="img-metrobank-footer-logo" src="https://earnest.ph/invest/data/photos/metrobank-footer.svg" />
+                                        <img alt="earnest-logo" className="img-earnest-footer-logo" src="https://earnest.ph/invest/data/photos/earnest-logo.svg" />
+                                        <img alt="earnest-spacer" src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4TD4AAAAvGwAKEB8gJCBTqm4YsWCK9+aZkIBQ/R9gjV8CAUKCDP8jlgKw7DOH2UgydmhM/235lDii/xOAEt8xaZ/VAA==" />
+                                        <img alt="metrobank-logo" className="img-metrobank-footer-logo" src="https://earnest.ph/invest/data/photos/metrobank-footer.svg" />
                                     </div>
                                     <div>
-                                        <img src="https://earnest.ph/invest/data/uploads/2020/08/facebook-icon.png" />
+                                        <img alt="facebook-logo" src="https://earnest.ph/invest/data/uploads/2020/08/facebook-icon.png" />
                                     </div>
                                 </div>
-                                <div className="div-footer-nav-menu">
+                                <div id="footerNavMenuContainer" className="div-footer-nav-menu">
                                     <ul className="ul-footer-nav-menu">
                                         <li className="li-footer-nav-item">
-                                            <a className="a-footer-nav-item" href="#">About</a>
+                                            <a className="a-footer-nav-item" href="https://earnest.ph/invest/about">About</a>
                                             <div className='footer-hover inactive'></div>
                                         </li>
                                         <li className="li-footer-nav-item">
-                                            <a className="a-footer-nav-item" href="#">FAQs</a>
+                                            <a className="a-footer-nav-item" href="https://earnest.ph/invest/faqs">FAQs</a>
                                             <div className='footer-hover inactive'></div>
                                         </li>
                                         <li className="li-footer-nav-item">
-                                            <a className="a-footer-nav-item" href="#">Terms and Conditions</a>
+                                            <a className="a-footer-nav-item" href="https://earnest.ph/invest/terms-and-conditions">Terms and Conditions</a>
                                             <div className='footer-hover inactive'></div>
                                         </li>
                                         <li className="li-footer-nav-item">
-                                            <a className="a-footer-nav-item" href="#">Disclaimer</a>
+                                            <a className="a-footer-nav-item" href="https://earnest.ph/invest/disclaimer">Disclaimer</a>
                                             <div className='footer-hover inactive'></div>
                                         </li>
                                         <li className="li-footer-nav-item">
-                                            <a className="a-footer-nav-item" href="#">Privacy Policy</a>
+                                            <a className="a-footer-nav-item" href="https://earnest.ph/invest/privacy-policy">Privacy Policy</a>
                                             <div className='footer-hover inactive'></div>
                                         </li>
                                     </ul>

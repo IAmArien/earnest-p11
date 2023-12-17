@@ -73,14 +73,17 @@ export default function Header() {
     }
 
     const onDrawerMenuClick =(isOpen) => {
+        const footerNavMenuContainer = document.getElementById('footerNavMenuContainer');
         const navSliderDrawer = document.getElementById('navSliderDrawer');
 
         if (isOpen) {
             navSliderDrawer.classList.remove('slide-close');
             navSliderDrawer.classList.add('slide-open');
+            footerNavMenuContainer.classList.add('put-behind-slider');
         } else {
             navSliderDrawer.classList.remove('slide-open');
             navSliderDrawer.classList.add('slide-close');
+            footerNavMenuContainer.classList.remove('put-behind-slider');
         }
     }
 
@@ -130,7 +133,7 @@ export default function Header() {
                     </Nav>
                 </div>
                 <Container className='header-container'>
-                    <Navbar.Brand href='#'>
+                    <Navbar.Brand>
                         <Image className='img-nav-toggler' src={HEADER_TOGGLER} onClick={() => onDrawerMenuClick(true)}/>
                         <Image id='imgNavLogo' className='img-nav-logo' src='https://earnest.ph/invest/data/photos/earnest-logo.svg'/>
                     </Navbar.Brand>
