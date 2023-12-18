@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/earnest-p11/static/css/main.1fd51608.css",
-    "main.js": "/earnest-p11/static/js/main.58fb6e16.js",
+    "main.css": "/earnest-p11/static/css/main.66d057dc.css",
+    "main.js": "/earnest-p11/static/js/main.20053a1e.js",
     "static/js/27.1b6a3390.chunk.js": "/earnest-p11/static/js/27.1b6a3390.chunk.js",
     "static/media/TOOLS_2.jpg": "/earnest-p11/static/media/TOOLS_2.db02e3275d1d6ed611ba.jpg",
     "static/media/CAROUSEL_1.png": "/earnest-p11/static/media/CAROUSEL_1.39369cf9066c5890a966.png",
@@ -9,20 +9,20 @@
     "static/media/TOOLS_1.png": "/earnest-p11/static/media/TOOLS_1.ee982b066913c6972731.png",
     "static/media/CAROUSEL_3.jpg": "/earnest-p11/static/media/CAROUSEL_3.f56660a81ee74083cd5d.jpg",
     "static/media/CAROUSEL_2.jpg": "/earnest-p11/static/media/CAROUSEL_2.4f689c4ea11fe711900f.jpg",
-    "static/media/LIFE_2.jpg": "/earnest-p11/static/media/LIFE_2.bccf8ecf0c65caf2a961.jpg",
     "static/media/CAROUSEL_5.jpg": "/earnest-p11/static/media/CAROUSEL_5.ba10d27e57ef6fd72286.jpg",
     "static/media/CAROUSEL_4.jpg": "/earnest-p11/static/media/CAROUSEL_4.054d89ef36e09e0df563.jpg",
-    "static/media/BASICS_2.jpg": "/earnest-p11/static/media/BASICS_2.9efad659a20378c7ad0a.jpg",
+    "static/media/BASICS_4.jpg": "/earnest-p11/static/media/BASICS_4.2166f557f0154de687df.jpg",
+    "static/media/LIFE_3.jpg": "/earnest-p11/static/media/LIFE_3.8f517aadb544d913d5c4.jpg",
     "static/media/CAROUSEL_6.jpg": "/earnest-p11/static/media/CAROUSEL_6.3576f2ebdfe8a8a81c73.jpg",
     "static/media/BASICS_1.jpg": "/earnest-p11/static/media/BASICS_1.18ad38e426dbcc50677e.jpg",
-    "static/media/BASICS_3.jpg": "/earnest-p11/static/media/BASICS_3.c770ef9c7db4b9ab5916.jpg",
+    "static/media/BASICS_5.jpg": "/earnest-p11/static/media/BASICS_5.4f2fa8145fc5a672128c.jpg",
     "index.html": "/earnest-p11/index.html",
     "static/media/HEADER_CLOSE.svg": "/earnest-p11/static/media/HEADER_CLOSE.f04db5e87a20ad929b89d74d775c5926.svg",
     "static/media/HEADER_SEARCH.svg": "/earnest-p11/static/media/HEADER_SEARCH.6b7dc51e8d8a77e2e81225912548c397.svg",
     "static/media/HEADER_TOGGLER.webp": "/earnest-p11/static/media/HEADER_TOGGLER.ce339889ed0a5a62634a.webp"
   },
   "entrypoints": [
-    "static/css/main.1fd51608.css",
-    "static/js/main.58fb6e16.js"
+    "static/css/main.66d057dc.css",
+    "static/js/main.20053a1e.js"
   ]
 }
