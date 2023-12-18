@@ -7,6 +7,7 @@ import TOOLS_1 from '../resources/TOOLS_1.png';
 import TOOLS_2 from '../resources/TOOLS_2.jpg';
 
 export default function Tools() {
+    const onCardTitleClick =(link) => { window.location.href = link }
     return (
         <React.Fragment>
             <Container className='section-auto-padder'>
@@ -30,7 +31,7 @@ export default function Tools() {
                             <Col lg={7} md={7} sm={12}>
                                 <div className='div-tools-card-description'>
                                     <p className='p-small-tools-title'>APPS</p>
-                                    <h2 className='h2-tools-title'>Earnest</h2>
+                                    <h2 className='h2-tools-title' onClick={() => onCardTitleClick('https://earnest.ph/invest/tools/earnest')}>Earnest</h2>
                                     <p className='p-tools-card-description'>
                                         Ready to take the first step? Download the Earnest app and begin investing with ease.
                                     </p>
@@ -50,7 +51,7 @@ export default function Tools() {
                             <Col lg={7} md={7} sm={12}>
                                 <div className='div-tools-card-description'>
                                     <p className='p-small-tools-title'>TOOLS</p>
-                                    <h2 className='h2-tools-title'>Financial Readiness Test</h2>
+                                    <h2 className='h2-tools-title' onClick={() => onCardTitleClick('https://earnest.ph/invest/financial-readiness-test')}>Financial Readiness Test</h2>
                                     <p className='p-tools-card-description'>
                                         Answer these questions to find out how well you manage your money and if you're ready to start investing.
                                     </p>

@@ -73,6 +73,7 @@
     font-size: 24px;
     line-height: 120%;
     color: #11324a;
+    cursor: pointer;
 }
 .p-tools-card-description {
     text-align: left;
